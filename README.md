@@ -14,11 +14,11 @@ El modelo final ha demostrado conseguir una precisión de clasificación realmen
 
 En la siguiente imagen observamos la evolución de la precisión a lo largo de las diferentes épocas de entrenamiento:
 
-!Evolución de precisión en el entrenamiento.
+!Evolución de precisión en el entrenamiento.(imagenes_readme/TasaAciertoModelo.png)
 
 Con las precisiones alcanzadas durante el entrenamiento, observamos resultados segmentados con una elevada tasa de acierto. Para una imagen del conjunto de prueba seleccionada de forma aleatoria conseguimos los siguientes resultados:
 
-!Comparativa predicción del modelo con Ground Truth real.
+!Comparativa predicción del modelo con Ground Truth real.(imagenes_readme/Comparativa.png)
 
 ## Versiones de las herramientas
 
@@ -52,5 +52,6 @@ La versión de Docker instalada es la 24.0.7. Se incluyeron las versiones 0.11.2
 ## Autor y contacto
 
 Autor: Carlos Martín Sanz
+
 Correo Electrónico: carlosmsanz7@gmail.com
 
