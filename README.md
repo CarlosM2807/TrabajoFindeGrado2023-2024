@@ -14,11 +14,11 @@ El modelo final ha demostrado conseguir una precisión de clasificación realmen
 
 En la siguiente imagen observamos la evolución de la precisión a lo largo de las diferentes épocas de entrenamiento:
 
-!Evolución de precisión en el entrenamiento.(imagenes_readme/TasaAciertoModelo.png)
+![Evolución de precisión en el entrenamiento.](imagenes_readme/TasaAciertoModelo.png)
 
 Con las precisiones alcanzadas durante el entrenamiento, observamos resultados segmentados con una elevada tasa de acierto. Para una imagen del conjunto de prueba seleccionada de forma aleatoria conseguimos los siguientes resultados:
 
-!Comparativa predicción del modelo con Ground Truth real.(imagenes_readme/Comparativa.png)
+![Comparativa predicción del modelo con Ground Truth real.](imagenes_readme/Comparativa.png)
 
 ## Versiones de las herramientas
 
