@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultados Obtenidos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+</head>
+<body id="body1">
+    <div id="cabecera">
+        <div id="escudo">
+            <img id="escudo-img" src="{{ url_for('static', filename='escudouva.png') }}" alt="Escudo UVA">
+            <img id="portatil" src="{{ url_for('static', filename='portatil.png') }}" alt="Portatil">
+        </div>
+        <div id="titulo2">
+            <h1>LandDetectIA: Segmentación de imágenes urbanas tomadas por drones</h1>
+        </div>
+    </div>
+
+      <!-- Contenido superior -->
+        <div id="titulo">
+            <h2>Resultados obtenidos</h2>
+        </div>
+
+   <!-- Añade la clase contenedor-principal al div principal -->
+    <div id="contenedor2" class="contenedor-principal">
+
+        <!-- Contenido inferior -->
+        <div class="columna">
+            <!-- Imagen Original -->
+            <div id="imagen-original">
+                <h2 id="tit">Imagen Original</h2>
+                <img src="{{ url_for('static', filename=original_image_filepath) }}" alt="Imagen Original">
+            </div>
+        </div>
+
+        <div class="columna" id="predicciones-columna">
+            <h2 id="tit2">Predicción</h2>
+            <img src="{{ url_for('static', filename='results/' + feature_map_filename) }}" alt="Imagen de predicción">
+        </div>
+
+        <div class="columna" id="predicciones-columna">
+            <div id="leyenda">
+                <h2 id=tituloleyenda>Leyenda</h2>
+                <div class="leyenda-contenido">
+                    <div class="leyenda-item"><div class="color-obstaculos"></div> Obstáculos</div>
+                    <div class="leyenda-item"><div class="color-agua"></div> Agua</div>
+                    <div class="leyenda-item"><div class="color-vegetacion"></div> Vegetación</div>
+                    <div class="leyenda-item"><div class="color-movimiento"></div> Movimiento</div>
+                    <div class="leyenda-item"><div class="color-zona-aterrizable"></div> Zona aterrizable</div>
+                </div>
+            </div>
+            <a id="botonreturn"  href="{{ url_for('interfaz') }}">
+            &#8592; Volver
+            </a>
+        </div>
+        </div>
+    
+    <!-- Recuadro de notas con borde negro -->
+    <div id="recuadro-notas">
+        <h2>Notas</h2>
+        <p>En la predicción obtenida hay un total de {{ pixeles_negros }} píxeles que no han podido ser clasificados, lo que compone el {{ porcentaje_negros }}% de píxeles de la imagen.</p>
+        <p>Aplicación realizada por: Carlos Martín.</p>
+    </div>
+</body>
+</html>

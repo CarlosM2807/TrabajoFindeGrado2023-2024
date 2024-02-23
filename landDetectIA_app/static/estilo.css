@@ -1,0 +1,283 @@
+#body1{
+    background-color: white; /* Color de fondo */
+    font-family: Arial, sans-serif;
+    margin: 0
+}
+
+#body0{
+    background-color: #cbcbcb; /* Color de fondo */
+    font-family: Arial, sans-serif;
+    margin: 0
+}
+
+#cabecera {
+    background-color: #43494f;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 125px;
+}
+
+/* Imagenes de la cabecera */
+
+#escudo-img {
+    max-width: 125px;
+}
+
+#portatil {
+    max-width: 75px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+
+#archivo {
+    position: relative;
+    text-align: center;
+}
+
+
+#archivo #subida {
+    max-width: 45px;
+    max-height: 45px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#drop_zone {
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+#preview {
+    display: none;
+}
+
+#noImagePopup {
+    display: none;
+}
+
+#error-mensaje,
+#exito-mensaje {
+    display: none;
+}
+
+
+/* Contenedor para el botón y el enlace de cancelar */
+.form-contenedor {
+    display: flex;
+}
+
+#predicciones-columna img {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.color-obstaculos {
+    background-color: rgb(155, 38, 182);
+}
+
+.color-agua {
+    background-color: rgb(14, 135, 204);
+}
+
+.color-vegetacion {
+    background-color: rgb(124, 252, 0);
+}
+
+.color-movimiento {
+    background-color: rgb(255, 20, 147);
+}
+
+.color-zona-aterrizable {
+    background-color: rgb(169, 169, 169);
+}
+
+
+#titulo2 {
+    flex: 1; /* Ocupa el espacio restante */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+
+#cajagrande {
+    margin-top: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+
+#archivo {
+    border: 3px dashed #797878;
+    justify-content: center;
+    display: flex;
+    padding: 40px; /* Mayor espacio para el cuadro de arrastre */
+    text-align: center;
+    margin-bottom: 20px; /* Separación entre el cuadro y el botón */
+}
+
+#input {
+    display: none;
+}
+
+#boton {
+    background-color: #0074D9; /* Color del botón */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+#error-mensaje {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+
+#exito-mensaje {
+    color: rgb(0, 255, 21);
+    font-weight: bold;
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+
+#titulo {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.columna {
+    flex: 1;
+    max-width: 100%; 
+    text-align: center;  
+}
+
+.miniatura {
+    margin-bottom: 20px;
+}
+
+img {
+    width: 256px;
+    height: auto;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    font-weight: bold;
+    border: 3px solid #000;
+    border-radius: 13px;
+    background-color: #cbcbcb;
+    z-index: 1000;
+}
+
+#botonpopup{
+    border: none;
+    cursor: pointer;
+    color: white;
+    height: 35px;
+    padding: 5px 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #0074D9;
+}
+
+#botoncancelar{
+    background-color: #ff003b;
+    color: white;
+    padding: 9px 9px;
+    text-decoration: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    display: none;
+}
+
+#botonreturn {
+    text-decoration: none;
+    padding: 10px 25px;
+    align-content: center;
+    background: #a9a9a9;
+    color: black;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-left: 200px;
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 100%);
+}
+
+#tit,
+#tit2 h2 {
+    margin: 20px 0; 
+}
+
+#tituloleyenda {
+    font-size: 16px; 
+    margin-right: 520px;
+}
+
+
+#leyenda {
+    margin-top: 142px; 
+    text-align: center;
+}
+
+#leyenda .leyenda-contenido {
+    text-align: center;
+}
+
+.leyenda-contenido {
+    margin-left: 20px;
+}
+
+.leyenda-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.leyenda-item div {
+    width: 15px; 
+    height: 15px;
+    margin-right: 10px; 
+}
+
+
+#recuadro-notas {
+    border: 2px solid black;
+    padding: 10px;
+    max-width: 1050px; 
+    margin-left: 50px; 
+    margin-top: 60px;
+}
+
+#recuadro-notas h2 {
+    color: black;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carga de imagenes para el procesamiento</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+</head>
+<body id="body0">
+    <div id="cabecera">
+        <div id="escudo">
+            <img id="escudo-img" src="{{ url_for('static', filename='escudouva.png') }}" alt="Escudo UVA">
+            <img id="portatil" src="{{ url_for('static', filename='portatil.png') }}" alt="Portatil">
+        </div>
+        <div id="titulo2">
+            <h1>LandDetectIA: Segmentación de imágenes urbanas tomadas por drones</h1>
+        </div>
+    </div>
+    
+        <div id="cajagrande">
+            <form action="{{ url_for('index') }}" method="post" enctype="multipart/form-data">
+                <div id="archivo" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="subida" src="/static/carga-de-imagen.png" alt="Carga">
+                    <label id="drop_zone" for="input">Clicka o arrastra para seleccionar un archivo</label>
+                    <input type="file" id="input" name="input" accept=".png, .jpg, .jpeg">
+                    <img id="preview" src="#" alt="Previsualización de la imagen"/>
+                </div>
+                <div id="error-mensaje">
+                    <p>Por favor, carga archivos en formato PNG, JPE o JPEG.</p>
+                </div>
+                <div id="exito-mensaje">
+                    <p>Archivo cargado con éxito.</p>
+                </div>
+                <div class="form-contenedor">
+                    <button id="boton" type="submit">Enviar</button>
+                    <a id="botoncancelar" href="{{ url_for('interfaz') }}">Cancelar</a>
+                </div>
+            </form>
+        </div>
+
+
+    <div id="noImagePopup" class="popup">
+        <p>Por favor, carga una imagen antes de enviar.</p>
+        <a id="botonpopup" href="{{ url_for('interfaz') }}" >Aceptar</a>
+    </div>
+    
+    <script src="{{ url_for('static', filename='scriptJavaScript.js') }}"></script>
+
+</body>
+</html>
+
